@@ -1,6 +1,6 @@
 <!-- This is a placeholder for a 192x192 PWA icon -->
 <!-- You should replace this with an actual PNG image -->
-<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
-  <rect width="192" height="192" fill="#3b82f6"/>
-  <text x="96" y="96" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="48" font-family="Arial, sans-serif">DT</text>
+<svg width="192" height="192" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" fill="#646cff"/>
+  <text x="96" y="96" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="24" font-family="Arial">DT</text>
 </svg>
