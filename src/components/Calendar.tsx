@@ -122,22 +122,24 @@ export const Calendar: React.FC = () => {
           {days}
         </div>
 
-        <div className="mt-6 flex items-center justify-center space-x-6">
-          <div className="flex items-center space-x-2">
-            <div className="w-3 h-3 rounded-full bg-green-500"></div>
-            <span className="text-sm text-stone-600">90%+ completed</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <div className="w-3 h-3 rounded-full bg-amber-500"></div>
-            <span className="text-sm text-stone-600">70-89% completed</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <div className="w-3 h-3 rounded-full bg-orange-500"></div>
-            <span className="text-sm text-stone-600">50-69% completed</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <div className="w-3 h-3 rounded-full bg-red-400"></div>
-            <span className="text-sm text-stone-600">Below 50%</span>
+        <div className="mt-6 px-2">
+          <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 xs:gap-3 max-w-sm mx-auto sm:max-w-none sm:flex sm:items-center sm:justify-center sm:gap-6">
+            <div className="flex items-center space-x-2">
+              <div className="w-3 h-3 rounded-full bg-green-500 flex-shrink-0"></div>
+              <span className="text-xs sm:text-sm text-stone-600 truncate">90%+ completed</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-3 h-3 rounded-full bg-amber-500 flex-shrink-0"></div>
+              <span className="text-xs sm:text-sm text-stone-600 truncate">70-89% completed</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-3 h-3 rounded-full bg-orange-500 flex-shrink-0"></div>
+              <span className="text-xs sm:text-sm text-stone-600 truncate">50-69% completed</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-3 h-3 rounded-full bg-red-400 flex-shrink-0"></div>
+              <span className="text-xs sm:text-sm text-stone-600 truncate">Below 50%</span>
+            </div>
           </div>
         </div>
       </div>
