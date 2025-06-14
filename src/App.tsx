@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Calendar, TrendingUp, Clock, Target, Flame, Award, ArrowLeft } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { TrendingUp, Target, Flame, Award, ArrowLeft } from 'lucide-react';
 import { useDailyTasks } from './hooks/useDailyTasks';
 import { useStats } from './hooks/useStats';
+import { useSwipeNavigation } from './hooks/useSwipeNavigation';
 import { TaskCard } from './components/TaskCard';
 import { ProgressRing } from './components/ProgressRing';
 import { StatCard } from './components/StatCard';
@@ -20,6 +21,13 @@ function App() {
   const [currentView, setCurrentView] = useState<View>('dashboard');
   const [currentStreak] = useState(0); // Will be calculated from stats
   const [weeklyAverage] = useState(0); // Will be calculated from stats
+
+  // Enable swipe navigation
+  useSwipeNavigation(() => {
+    if (currentView !== 'dashboard') {
+      setCurrentView('dashboard');
+    }
+  });
 
   // Save daily stats when tasks change
   useEffect(() => {

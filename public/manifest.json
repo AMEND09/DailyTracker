@@ -1,26 +1,17 @@
 {
-  "name": "daily-tracker-pwa",
+  "name": "DailyTracker",
   "short_name": "DailyTracker",
-  "description": "A daily habit and task tracker application",
-  "start_url": "/DailyTracker/",
+  "description": "Track your daily activities",
+  "theme_color": "#1a1a1a",
+  "background_color": "#1a1a1a",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#3b82f6",
-  "orientation": "portrait-primary",
+  "scope": "/DailyTracker/",
+  "start_url": "/DailyTracker/",
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable any"
+      "type": "image/png"
     }
-  ],
-  "categories": ["productivity", "lifestyle"],
-  "lang": "en-US"
+  ]
 }

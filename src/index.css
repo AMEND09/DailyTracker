@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* iOS PWA specific styles */
+@media (display-mode: standalone) {
+  body {
+    /* Ensure background matches status bar */
+    background-color: #1a1a1a;
+    /* Add safe area padding for iOS notch */
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  #root {
+    min-height: 100vh;
+    background-color: #1a1a1a;
+  }
+}
+
+/* Add touch feedback for better mobile experience */
+button, a {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
+}
